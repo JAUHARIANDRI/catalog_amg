@@ -1,22 +1,18 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Admin extends MX_Controller
+class CustomerControllers extends MX_Controller
 {
     public function __construct()
     {
+
         parent::__construct();
         is_logged_in_admin();
     }
 
+    // Kelola Data Barang
     public function index()
     {
-        $this->session->set_userdata('title', 'Dasboard', 'nama_customer');
-        $this->template->display('Views_admin');
-    }
-
-    function detailadmin()
-    {
-        echo 'Dera';
+        $this->template->display('CustomerViews');
     }
 }

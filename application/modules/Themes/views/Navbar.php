@@ -33,10 +33,17 @@
     <script type="text/javascript" src="<?= base_url() ?>assets/js/plugins/ui/moment/moment.min.js"></script>
     <script type="text/javascript" src="<?= base_url() ?>assets/js/plugins/pickers/daterangepicker.js"></script>
 
-    <script type="text/javascript" src="<?= base_url() ?>assets/js/core/app.js"></script>
-    <script type="text/javascript" src="<?= base_url() ?>assets/js/pages/dashboard.js"></script>
+
     <!-- /theme JS files -->
 
+    <!-- Theme JS files -->
+    <script type="text/javascript" src="<?= base_url() ?>assets/js/plugins/tables/datatables/datatables.min.js"></script>
+    <script type="text/javascript" src="<?= base_url() ?>assets/js/plugins/forms/selects/select2.min.js"></script>
+
+    <script type="text/javascript" src="<?= base_url() ?>assets/js/core/app.js"></script>
+    <script type="text/javascript" src="<?= base_url() ?>assets/js/pages/datatables_basic.js"></script>
+
+    <!-- /theme JS files -->
 
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -267,7 +274,7 @@
                 <li class="dropdown dropdown-user">
                     <a class="dropdown-toggle" data-toggle="dropdown">
                         <img src="<?= base_url() ?>assets/images/placeholder.jpg" alt="">
-                        <span><?= $this->session->userdata('nama_customer') ?></span>
+                        <span><?= $this->session->userdata('nama_user') ?></span>
                         <i class="caret"></i>
                     </a>
 

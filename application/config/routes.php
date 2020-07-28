@@ -76,3 +76,11 @@ $route['PlatingMethod']       = 'PlatingMethod/PlatingMethodControllers/index';
 $route['Logadm']             = 'Logadm/LogadmControllers/index';
 $route['RegisterAdm']        = 'RegisterAdm/RegisterAdmControllers/index';
 $route['ForgotPassAdm']      = 'ForgotPassAdm/ForgotPassAdmControllers/index';
+
+// Customer
+$route['Customer']      = 'Customer/CustomerControllers/index';
+
+// UserAdm
+$route['UserAdm']      = 'UserAdm/UserAdmControllers/index';
+// $route['UserAdm']      = 'UserAdm/UserAdmControllers/AddUser';
+// $route['UserAdmAdd']      = 'UserAdmAdd/UserAdmAddcontrollers/index';

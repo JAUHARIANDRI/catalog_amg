@@ -54,6 +54,7 @@
                                 <div class="form-control-feedback">
                                     <i class="icon-user text-muted"></i>
                                 </div>
+
                             </div>
                             <div class="form-group has-feedback has-feedback-left">
                                 <input type="password" name="password" class="form-control input-lg" placeholder="Password">
@@ -77,9 +78,9 @@
                             <div class="form-group">
                                 <button type="submit" class="btn bg-blue btn-block btn-lg">LogIn<i class="icon-arrow-right14 position-right"></i></button>
                             </div>
-                            <div class="content-divider text-muted form-group"><span>Don't have an account?</span></>
+                            <!-- <div class="content-divider text-muted form-group"><span>Don't have an account?</span></>
                                 <a href="<?= base_url('RegisterAdm') ?>" class="btn bg-slate btn-block btn-lg content-group">Register</a>
-                            </div>
+                            </div> -->
                     </form>
                 </div>
             </div>

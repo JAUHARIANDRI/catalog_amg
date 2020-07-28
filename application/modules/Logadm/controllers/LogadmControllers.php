@@ -22,7 +22,8 @@ class LogadmControllers extends MX_Controller
         $data['user_id'] = $this->input->post('username');
         $data['password'] = $this->input->post('password');
         $respon = $this->SERVER_API->_postAPI('user/login-user', $data);
-
+        // var_dump($respon);
+        // die;
         if ($respon->status == 'error') {
             $this->session->set_flashdata('alert', '<div class="alert alert-danger no-border">
             <button type="button" class="close" data-dismiss="alert"><span>×</span><span class="sr-only">Close</span></button>
@@ -32,14 +33,18 @@ class LogadmControllers extends MX_Controller
         } else {
 
             foreach ($respon->data as $user) {
-                $nama_customer = $user->nama_customer;
-                $kode_customer = $user->kode_customer;
+                // $nama_customer = $user->nama_customer;
+                // $kode_customer = $user->kode_customer;
+                // $level = $user->level;
+                // $token = $user->token;
+                $nama_user = $user->nama_user;
+                $user_id = $user->user_id;
                 $level = $user->level;
                 $token = $user->token;
             }
             $data = [
-                'nama_customer' => $nama_customer,
-                'kode_customer' => $kode_customer,
+                'nama_user' => $nama_user,
+                'user_id' => $user_id,
                 'level' => $level,
                 'Admintoken' => $token
             ];
